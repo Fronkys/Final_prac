@@ -1,0 +1,27 @@
+﻿<Page x:Class="Final_prac.Page9"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Final_prac"
+      mc:Ignorable="d" d:DesignWidth="770"
+      Title="Page9" Height="437">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="RegionGrid" Grid.RowSpan="2" Grid.ColumnSpan="2" SelectionChanged="RegionGrid_SelectionChanged"/>
+        <TextBox x:Name="RegionBox" HorizontalAlignment="Center"  TextWrapping="Wrap" materialDesign:HintAssist.Hint="Здесь можно что-то написать"  VerticalAlignment="Center" Width="376" Height="36" Grid.Column="1" Grid.Row="1"/>
+        <TextBox x:Name="NumberBox" HorizontalAlignment="Center"  TextWrapping="Wrap" materialDesign:HintAssist.Hint="Здесь можно что-то написать"  VerticalAlignment="Top" Width="376" Height="36" Margin="0,132,0,0" Grid.Column="1" Grid.Row="1"/>
+        <Button Content="Изменить" HorizontalAlignment="Center" VerticalAlignment="Top" Height="42" Width="120" Click="Button_Click_1" Grid.Column="1"  Grid.Row="1" Margin="0,32,0,0"/>
+        <Button Content="Удалить" HorizontalAlignment="Left" VerticalAlignment="Top" Height="42" Width="120" Click="Button_Click_2" Grid.Column="1"  Grid.Row="1" Margin="0,32,250,0" />
+        <Button Content="Добавить" HorizontalAlignment="Right" VerticalAlignment="Top" Height="42" Width="120"  Click="Button_Click" Grid.Row="1" Grid.Column="1" Margin="0,32,0,0"  />
+    </Grid>
+</Page>
